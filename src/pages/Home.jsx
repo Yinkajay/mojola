@@ -16,7 +16,7 @@ const Home = () => {
                         </div>
                         <div className={homeStyles['top-right']}>
                             <div className={homeStyles['availability']}> <div className={homeStyles['online-dot']}></div> <p>currently available</p>
-                            </div>
+                            </div>w
                             <p><Link>archive</Link>📂</p>
 
                         </div>
