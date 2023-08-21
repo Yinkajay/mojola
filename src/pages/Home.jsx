@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar"
 import homeStyles from './Home.module.css'
 import selfie from '../assets/profileImage.png'
 import { Link } from "react-router-dom"
+import Footer from "../components/Footer"
 
 const Home = () => {
     return (
@@ -16,9 +17,8 @@ const Home = () => {
                         </div>
                         <div className={homeStyles['top-right']}>
                             <div className={homeStyles['availability']}> <div className={homeStyles['online-dot']}></div> <p>currently available</p>
-                            </div>w
+                            </div>
                             <p><Link>archive</Link>📂</p>
-
                         </div>
                     </div>
                     <div className={homeStyles['intro-bottom-area']}>
@@ -30,6 +30,7 @@ const Home = () => {
 
                 </div>
             </section>
+            <Footer />
         </div>
     )
 }
