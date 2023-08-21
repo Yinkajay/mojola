@@ -1,6 +1,6 @@
 .home-body {
     /* border: 1px solid; */
-    height: 80vh;
+    height: 85vh;
     display: flex;
 }
 
@@ -11,14 +11,6 @@
     border-radius: 20px;
     margin-right: 10px;
     position: relative;
-}
-
-.info-area {
-    background-color: #FED2D1;
-    height: 100%;
-    flex: 0.5;
-    border-radius: 20px;
-    margin-left: 10px;
 }
 
 .intro-top-area {
@@ -83,7 +75,6 @@
     animation: pulsate 1.5s infinite;
   }
   
-  /* Define the pulsating animation */
   @keyframes pulsate {
     0% {
       transform: scale(1);
@@ -99,3 +90,94 @@
     }
   }
   
+  .info-area {
+    background-color: black;
+    height: 100%;
+    flex: 0.5;
+    border-radius: 20px;
+    margin-left: 10px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2.5fr 1.5fr;
+    grid-template-areas: 
+      "designs designs"
+      "contact shots";
+}
+
+.info-area div{
+    border-radius: 20px;
+}
+
+
+
+.designs{
+    background-color: purple;
+    grid-area: designs;
+}
+
+.contact{
+    background-color: yellow;
+    grid-area: contact;
+}
+
+.shots{
+    background-color: green;
+    grid-area: shots;
+}
+
+
+
+
+  /* Media query for the second row */
+  @media screen and (min-width: 600px) {
+    .grid-container {
+      grid-template-columns: repeat(3, 1fr); /* Second row: 3 columns equal width */
+    }
+  } 
+
+  @media screen and (min-width: 900px) {
+    .grid-container {
+      grid-template-columns: 70% 30%; /* Third row: 70% and 30% columns */
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+  .dot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    width: 100px;
+    height: 100px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+  }
+   */

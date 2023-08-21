@@ -3,7 +3,7 @@ import footerStyles from './Footer.module.css'
 
 const Footer = () => {
   return (
-    <div>
+    <div className={footerStyles['']}>
       <p>designed & developed by Mojola & Yinx 🤙🏾</p>
     </div>
   )
