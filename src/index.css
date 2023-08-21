@@ -11,6 +11,10 @@ body {
   height: 100%;
 }
 
+#root{
+  height: 100%;
+}
+
 body {
   background-color: #F9F9F9;
   padding: 0 3rem;

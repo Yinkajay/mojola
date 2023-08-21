@@ -30,31 +30,35 @@ const Home = () => {
                     <div className={homeStyles['designs']}>
                         <img src="" alt="figma-logo" />
                         <p>i tend to leverages design and research to provide quality solutions spanning across multiple aspect in technology.</p>
-                        <button>
-                            resume
-                        </button>
-                        <button>
-                            projects
-                        </button>
+                        <Link>
+                            <button>
+                                resume
+                            </button>
+                        </Link>
+                        <Link to='/projects'>
+                            <button>
+                                projects
+                            </button>
+                        </Link>
                     </div>
                     <div className={homeStyles['contact']}>
-                        <img src="" alt="figma-logo" />
+                        <img src="" alt="briefcase-icon" />
                         <p>i tend to leverages design and research to provide quality solutions spanning across multiple aspect in technology.</p>
                         <button>
                             contact
                         </button>
                     </div>
                     <div className={homeStyles['shots']}>
-                        <img src="" alt="figma-logo" />
+                        <img src="" alt="feather-icon" />
                         <p>i tend to leverages design and research to provide quality solutions spanning across multiple aspect in technology.</p>
                         <button>
                             shots
                         </button>
                     </div>
                 </div>
-            </section>
+            </section >
             <Footer />
-        </div>
+        </div >
     )
 }
 
