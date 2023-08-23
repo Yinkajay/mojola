@@ -1,147 +1,240 @@
+.home {
+  position: relative;
+}
+
 .home-body {
-    /* border: 1px solid; */
-    height: 85vh;
-    display: flex;
+  /* border: 1px solid; */
+  height: 83vh;
+  display: flex;
 }
 
 .intro-area {
-    background-color: #F4F4F4;
-    height: 100%;
-    flex: 0.5;
-    border-radius: 20px;
-    margin-right: 10px;
-    position: relative;
+  background-color: #F4F4F4;
+  height: 100%;
+  flex: 0.5;
+  border-radius: 20px;
+  margin-right: 10px;
+  position: relative;
 }
 
 .intro-top-area {
-    /* background-color: red; */
-    padding: 1.5rem;
-    display: flex;
-    justify-content: space-between;
+  /* background-color: red; */
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 .availability {
-    border-radius: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #DEFCE4;
-    padding: 7px 10px;
-    color: #19A838;
-    font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 10px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #DEFCE4;
+  padding: 7px 10px;
+  color: #19A838;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
 .top-right a {
-    color: #8F8F8F;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
+  color: #8F8F8F;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  text-decoration: underline;
 }
 
 .name {
-    font-family: 'Be Vietnam Pro', sans-serif;
-    font-style: italic;
-    font-weight: 700;
-    font-size: 22px;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 22px;
 }
 
 .intro-bottom-area {
-    /* background-color: green; */
-    padding: 1.5rem;
-    position: absolute;
-    bottom: 0;
+  /* background-color: green; */
+  padding: 1.5rem;
+  position: absolute;
+  bottom: 0;
 }
 
-.intro-bottom-area h1{
-    font-size: 56px;
+.intro-bottom-area h1 {
+  font-size: 56px;
 }
 
-.intro-bottom-area p{
-    color: #8F8F8F;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 300;
+.intro-bottom-area p {
+  color: #8F8F8F;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
 }
 
 /* Define the basic dot style */
 .online-dot {
-    width: 3px;
-    height: 3px;
-    margin-right: 5px;
-    background-color: green;
-    border-radius: 50%;
-    animation: pulsate 1.5s infinite;
+  width: 3px;
+  height: 3px;
+  margin-right: 5px;
+  background-color: green;
+  border-radius: 50%;
+  animation: pulsate 1.5s infinite;
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
   }
-  
-  @keyframes pulsate {
-    0% {
-      transform: scale(1);
-      opacity: 0.6;
-    }
-    50% {
-      transform: scale(1.2);
-      opacity: 1;
-    }
-    100% {
-      transform: scale(1);
-      opacity: 0.6;
-    }
+
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+}
+
+.info-area {
+  background-color: black;
+  height: 100%;
+  flex: 0.5;
+  border-radius: 20px;
+  margin-left: 10px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2.5fr 1.5fr;
+  grid-template-areas:
+    "designs designs"
+    "contact shots";
+}
+
+
+.info-area p {
+  color: #14130F;
+  font-size: 20px;
+  font-weight: 600;
+  position: absolute;
+  bottom: 70px;
+}
+
+.info-area button {
+  display: inline-flex;
+  background-color: transparent;
+  height: 32px;
+  border-radius: 16px;
+  padding: 8px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  position: absolute;
+  border: 2px solid;
+  left: 20px;
+  bottom: 20px;
+}
+
+.info-area button:hover {
+  text-decoration: underline;
+}
+
+.resume-btn {
+  left: 130px !important;
+}
+
+.info-area div {
+  border-radius: 20px;
+  padding: 20px;
+  position: relative;
+}
+
+.designs {
+  background: #FED2D1;
+  grid-area: designs;
+}
+
+.contact {
+  background: #FBFFCD;
+  grid-area: contact;
+}
+
+.shots {
+  background: #FFEBD0;
+  grid-area: shots;
+}
+
+
+@media (max-width: 1000px) {
+  .home-body {
+    flex-direction: column;
+    height: max-content;
+  }
+
+  .intro-area {
+    height: 600px;
+    flex: auto;
+    margin-right: 0;
+    margin-bottom: 20px;
   }
   
   .info-area {
-    background-color: black;
-    height: 100%;
-    flex: 0.5;
-    border-radius: 20px;
-    margin-left: 10px;
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 2.5fr 1.5fr;
-    grid-template-areas: 
-      "designs designs"
-      "contact shots";
-}
-
-.info-area div{
-    border-radius: 20px;
+    height: 600px;
+    flex: auto;
+    margin-bottom: 3rem;
+  }
 }
 
 
-
-.designs{
-    background-color: purple;
-    grid-area: designs;
-}
-
-.contact{
-    background-color: yellow;
-    grid-area: contact;
-}
-
-.shots{
-    background-color: green;
-    grid-area: shots;
+/* Media query for the second row */
+@media (max-width: 600px) {
+.home-body{
+  margin: 0 -1.5rem;
 }
 
 
-
-
-  /* Media query for the second row */
-  @media screen and (min-width: 600px) {
-    .grid-container {
-      grid-template-columns: repeat(3, 1fr); /* Second row: 3 columns equal width */
-    }
-  } 
-
-  @media screen and (min-width: 900px) {
-    .grid-container {
-      grid-template-columns: 70% 30%; /* Third row: 70% and 30% columns */
-    }
+  .intro-area h1 {
+    font-size: 32px;
   }
 
+  .intro-area p {
+    font-size: 16px;
+  }
+
+  .info-area {
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    margin-bottom: 4rem;
+  }
+
+  .info-area p {
+    font-size: 16px;
+  }
+
+  .info-area button {
+    height: 28px;
+    gap: 6px;
+    bottom: 10px;
+    left: 10px;
+    padding: 6px 9px;
+  }
+
+  .resume-btn {
+    left: 100px !important;
+  }
+
+  .info-area div {
+    height: 300px;
+    padding: 10px;
+  }
+
+  .info-area div:first-child {
+    height: 500px;
+  }
+}
 
 
 
@@ -162,7 +255,9 @@
 
 
 
-  /* .container {
+
+
+/* .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;

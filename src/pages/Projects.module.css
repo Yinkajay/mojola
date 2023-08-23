@@ -1,7 +1,7 @@
 .projects {}
 
 .projects-area {
-    /* background-color: rgba(255, 0, 0, 0.195); */
+    background-color: rgba(255, 0, 0, 0.195);
     padding: 1rem;
     margin-bottom: 1rem;
     display: flex;
@@ -48,4 +48,41 @@
     padding: 8px 12px;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width:1000px){
+    .projects-area{
+        padding: 9px;
+        justify-content: space-evenly;
+    }
+    .project-card{
+        width: 44%;
+        height: max-content;
+    }
+
+    .project-card p {
+    }
+}
+
+@media (max-width: 800px){
+    .projects-area{
+        padding: 0;
+    }
+
+    .project-card{
+        width: 40%;
+        margin: 5px;
+    }
+}
+
+@media (max-width: 600px){
+    .project-card{
+        width: 70%;
+    }
+}
+
+@media (max-width: 400px){
+.project-card{
+    width: 90%;
+}
 }

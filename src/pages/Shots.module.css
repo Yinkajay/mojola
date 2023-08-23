@@ -1,0 +1,17 @@
+.images-ctn{
+    margin: 0 auto;
+    width: 60%;
+    padding: 10px;
+}
+
+.images-ctn img{
+    width: 100%;
+    margin: 25px 0;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transition: all 0.35s ease;
+}
+
+.images-ctn img:hover{
+    transform: scale(1.1);
+}

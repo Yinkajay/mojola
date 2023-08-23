@@ -1,13 +1,26 @@
+/* eslint-disable no-unused-vars */
 import Navbar from "../components/Navbar"
 import homeStyles from './Home.module.css'
 import selfie from '../assets/profileImage.png'
 import { Link } from "react-router-dom"
 import Footer from "../components/Footer"
+import { FiArrowUpRight, FiBriefcase, FiFeather, FiFigma } from "react-icons/fi";
+import { RxArrowTopRight } from "react-icons/rx";
 
 const Home = () => {
+    const date = new Date(); // Create a new Date object
+
+    // Specify the desired time zone (e.g., "America/New_York")
+    const timeZone = "America/New_York";
+
+    // Convert the date to a string using the specified time zone
+    const dateString = date.toLocaleString("en-US", { timeZone });
+
+    // console.log(dateString); // Output the date in the specified time zone
+
     return (
-        <div>
-            <Navbar />
+        <div className={homeStyles['home']}>
+            <Navbar navWithDate />
             <section className={homeStyles['home-body']}>
                 <div className={homeStyles['intro-area']}>
                     <div className={homeStyles['intro-top-area']}>
@@ -28,32 +41,38 @@ const Home = () => {
                 </div>
                 <div className={homeStyles['info-area']}>
                     <div className={homeStyles['designs']}>
-                        <img src="" alt="figma-logo" />
-                        <p>i tend to leverages design and research to provide quality solutions spanning across multiple aspect in technology.</p>
+                        <FiFigma size={30} />
+                        <p>i tend to leverage design and research to provide quality solutions spanning across multiple aspect in technology.</p>
                         <Link>
-                            <button>
+                            <button className={homeStyles['resume-btn']}>
                                 resume
+                            <RxArrowTopRight/>
                             </button>
                         </Link>
                         <Link to='/projects'>
                             <button>
                                 projects
+                            <RxArrowTopRight/>
                             </button>
                         </Link>
                     </div>
                     <div className={homeStyles['contact']}>
-                        <img src="" alt="briefcase-icon" />
-                        <p>i tend to leverages design and research to provide quality solutions spanning across multiple aspect in technology.</p>
+                        <FiBriefcase size={30} />
+                        <p>want to talk about your project or opportunity?</p>
                         <button>
-                            contact
+                            contact                  
+                            <RxArrowTopRight/>
                         </button>
                     </div>
                     <div className={homeStyles['shots']}>
-                        <img src="" alt="feather-icon" />
-                        <p>i tend to leverages design and research to provide quality solutions spanning across multiple aspect in technology.</p>
-                        <button>
-                            shots
-                        </button>
+                        <FiFeather size={30} />
+                        <p>i get to explore a lot and play around with designs</p>
+                        <Link to='/shots'>
+                            <button>
+                                shots
+                                <RxArrowTopRight/>
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </section >

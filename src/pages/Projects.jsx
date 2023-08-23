@@ -10,7 +10,7 @@ import { Link } from "react-router-dom"
 const Projects = () => {
   return (
     <div className={projectStyles['projects']}>
-      <Navbar />
+      <Navbar navText='project 👨🏾‍💻' />
       <div className={projectStyles['projects-area']}>
         <div className={projectStyles['project-card']}>
           <div className={projectStyles['card-img-ctn']}>
