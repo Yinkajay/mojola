@@ -98,7 +98,7 @@
 }
 
 .info-area {
-  background-color: black;
+  /* background-color: black; */
   height: 100%;
   flex: 0.5;
   border-radius: 20px;
