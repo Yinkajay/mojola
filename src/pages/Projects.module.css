@@ -48,6 +48,10 @@
     align-items: center;
 }
 
+.case-study-btn:hover{
+    text-decoration: underline;
+}
+
 @media (max-width:1000px) {
     .projects-area {
         padding: 9px;

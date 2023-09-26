@@ -18,6 +18,14 @@ const Home = () => {
 
     // console.log(dateString); // Output the date in the specified time zone
 
+    const handleContactClick = () => {
+        const email = 'ojoniyi12@gmail.com'; 
+        const subject = 'Contact Inquiry'; 
+        const body = 'Hello, I would like to inquire about...'; 
+
+        window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+    };
+
     return (
         <div className={homeStyles['home']}>
             <Navbar navWithDate />
@@ -31,7 +39,7 @@ const Home = () => {
                         <div className={homeStyles['top-right']}>
                             <div className={homeStyles['availability']}> <div className={homeStyles['online-dot']}></div> <p>currently available</p>
                             </div>
-                            <p><Link>archive</Link>📂</p>
+                            <p><Link target="_blank" to='https://mojola.notion.site/Mojolaoluwa-d74afa9bd01248f7906703055118ca12'>archive</Link>📂</p>
                         </div>
                     </div>
                     <div className={homeStyles['intro-bottom-area']}>
@@ -43,25 +51,25 @@ const Home = () => {
                     <div className={homeStyles['designs']}>
                         <FiFigma size={30} />
                         <p>i tend to leverage design and research to provide quality solutions spanning across multiple aspect in technology.</p>
-                        <Link>
+                        <Link target="_blank" to='https://drive.google.com/file/d/1EMDw0C53B9J6r2FOJh_od1Y3yxzA5nHh/view'>
                             <button className={homeStyles['resume-btn']}>
                                 resume
-                            <RxArrowTopRight/>
+                                <RxArrowTopRight />
                             </button>
                         </Link>
                         <Link to='/projects'>
-                            <button>
+                            <button className={homeStyles['projects-btn']}>
                                 projects
-                            <RxArrowTopRight/>
+                                <RxArrowTopRight />
                             </button>
                         </Link>
                     </div>
                     <div className={homeStyles['contact']}>
                         <FiBriefcase size={30} />
                         <p>want to talk about your project or opportunity?</p>
-                        <button>
-                            contact                  
-                            <RxArrowTopRight/>
+                        <button onClick={handleContactClick}>
+                            contact
+                            <RxArrowTopRight />
                         </button>
                     </div>
                     <div className={homeStyles['shots']}>
@@ -70,7 +78,7 @@ const Home = () => {
                         <Link to='/shots'>
                             <button>
                                 shots
-                                <RxArrowTopRight/>
+                                <RxArrowTopRight />
                             </button>
                         </Link>
                     </div>

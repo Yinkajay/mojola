@@ -33,7 +33,7 @@ const Projects = () => {
           <p>
             ChatUp is a social app that allows you to chat with anyone within 500M of where you are just request and say hi
           </p>
-          <Link>
+          <Link target="_blank" to='https://www.behance.net/gallery/137536725/ChatUp-A-social-app-case-study'>
             <button className={projectStyles['case-study-btn']}>read case study <FiArrowUpRight />
             </button>
           </Link>
@@ -48,7 +48,7 @@ const Projects = () => {
           <p>
             this project was inspired by backdrop and instagram
           </p>
-          <Link>
+          <Link target="_blank" to='https://mojola.notion.site/Fare-6d05319aa62646edb57d883d6c5ef895?pvs=4'>
             <button className={projectStyles['case-study-btn']}>read case study <FiArrowUpRight />
             </button>
           </Link>
@@ -63,7 +63,7 @@ const Projects = () => {
           <p>
             Hodor is a password manager that remembers all your password for you and keep them safe behind one password that only you know (hey, we got you if you forget this too).
           </p>
-          <Link>
+          <Link target="_blank" to='https://bootcamp.uxdesign.cc/hodor-a-ui-ux-case-study-33599a28c9c8?gi=b7db25bcde87'>
             <button className={projectStyles['case-study-btn']}>read case study <FiArrowUpRight />
             </button>
           </Link>

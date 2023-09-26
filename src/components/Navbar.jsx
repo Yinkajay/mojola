@@ -11,7 +11,7 @@ const Navbar = ({ navWithDate, navText }) => {
             <nav className={navStyles['navbar']}>
                 <h1>product designer 👋🏾</h1>
                 <p>
-                    {date}
+                    {date} WAT
                 </p>
             </nav>
         )
