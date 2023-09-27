@@ -37,6 +37,10 @@
   margin-bottom: 10px;
 }
 
+.top-right{
+  font-family: 'GT Walsheim pro', sans-serif;
+}
+
 .top-right a {
   color: #8F8F8F;
   font-size: 18px;
@@ -61,11 +65,14 @@
 
 .intro-bottom-area h1 {
   font-size: 56px;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  /* font-family: 'GT Walsheim Pro'; */
 }
 
 .intro-bottom-area p {
   color: #8F8F8F;
   font-size: 24px;
+  font-family: 'GT Walsheim Pro', sans-serif;
   font-style: normal;
   font-weight: 300;
 }
@@ -135,6 +142,7 @@
   border: 2px solid;
   left: 20px;
   bottom: 20px;
+  font-weight: bold;
 }
 
 .info-area button:hover {
@@ -149,11 +157,14 @@
   border-radius: 20px;
   padding: 20px;
   position: relative;
+  font-family: 'Be Vietnam Pro', sans-serif;
 }
 
 .designs {
   background: #FED2D1;
   grid-area: designs;
+  
+  
 }
 
 .contact {
@@ -235,6 +246,7 @@
     height: 500px;
   }
 }
+
 
 
 

@@ -6,6 +6,7 @@ import { Link } from "react-router-dom"
 import Footer from "../components/Footer"
 import { FiArrowUpRight, FiBriefcase, FiFeather, FiFigma } from "react-icons/fi";
 import { RxArrowTopRight } from "react-icons/rx";
+import '../fonts/font/stylesheet.css'
 
 const Home = () => {
     const date = new Date(); // Create a new Date object
@@ -19,9 +20,9 @@ const Home = () => {
     // console.log(dateString); // Output the date in the specified time zone
 
     const handleContactClick = () => {
-        const email = 'ojoniyi12@gmail.com'; 
-        const subject = 'Contact Inquiry'; 
-        const body = 'Hello, I would like to inquire about...'; 
+        const email = 'ojoniyi12@gmail.com';
+        const subject = 'Contact Inquiry';
+        const body = 'Hello, I would like to inquire about...';
 
         window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
     };

@@ -4,11 +4,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: 'GT Walsheim pro', sans-serif; 
+    font-weight: 700;
 }
 
 .navbar h1 {
     font-size: 26px;
-    font-family: 'Bef   Vietnam Pro', sans-serif;
+    font-family: 'Be Vietnam Pro', sans-serif;
     font-weight: 700;
     margin-right: 10px;
 }
